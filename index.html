@@ -1,0 +1,54 @@
+<!-- index.html이 디폴트 (메인페이지 검색) -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome to KokoaClone</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <!-- BEM : block__element--modifier -->
+    <div class="status-bar">
+      <div class="status-bar__column">
+        <span>No Service</span>
+        <i class="fas fa-wifi"></i>
+      </div>
+      <div class="status-bar__column">
+        <span>18:43</span>
+      </div>
+      <div class="status-bar__column">
+        <span>11%</span>
+        <i class="fas fa-battery-quarter fa-lg"></i>
+        <i class="fas fa-bolt"></i>
+      </div>
+    </div>
+
+    <header class="welcome-header">
+      <h1 class="welcome-header__title">Welcome to KokoaClone</h1>
+      <p class="welcome-header__text">If you have a Kokoa Account,</p>
+      <p class="welcome-header__text">
+        log in with your email or phone number.
+      </p>
+    </header>
+
+    <!-- method post : 서버있을시, 보안가능
+        method get : 서버없고 보안X, URL에 그대로 기록됨 -->
+    <form action="friends.html" method="get" id="login-form">
+      <input name="username" type="text" placeholder="Email or phone number" />
+      <input name="password" type="password" placeholder="Password" />
+      <input type="submit" value="Log In" />
+      <input type="submit" value="Sign Up" />
+      <a href="#">Find Kokoa Account or Password</a>
+    </form>
+
+    <div id="no-mobile">
+      <span>Your screen is too big</span>
+    </div>
+
+    <script
+      src="https://kit.fontawesome.com/6478f529f2.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

@@ -1,3 +1,9 @@
 # Kokoa Clone 2022
 
-HTML & CSS are so much fun!
+Goal : Learning HTML & CSS with NomadCoders
+
+Using :
+HTML
+CSS
+
+Date : 2021.12.27 - 2021.01.07
